@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+<title> SBT - Color Match </title>
+<wicket:link>
+	<link rel = "stylesheet" href = "PlayCM.css">
+	<script type = "text/javascript" src = "PlayCM.js" defer></script>
+</wicket:link>
+</wicket:head>
+<body>
+	<form wicket:id = "playCMForm" class = "container col-lg-3">
+		<div class = "container" id ="gameboard">
+			<h2> Color Match </h2>
+			<p id ="score"> </p>
+	 		<div class = "tiles"></div>
+	 		
+	 		<div class = "container" is = "ActionButtons">
+	 			<div class = "row">
+	 				<input type = "submit" wicket:id = "playAgainButton" id = "playAgain" class = "btn btn-outline-primary col-md-3" value = "Play Again"/>
+	 				<input type = "submit" wicket:id = "GoBackButton" id = "Backup" class = "btn btn-outline-primary col-md-3" value = "Go Back"/>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.tilesEx{
+	
+	margin: 48px auto;
+	width: max-context;
+	display: grid;
+	grid-template-columns: repeat(12, 100px);
+	gap: 8px;
+	padding-left: 5px;
+
+}
+
+.tileEx{
+	height: 100px;
+	background: #bfbfbf;
+	border: 3px soild #eeeeee;
+	cursor: pointer;
+	border-radius: 5px;
+	
+}
+
+.tileEx:hover {
+	background-color: #dddddd;
+}
+
+H2 {
+	text-Align: Center;
+	font-size: 36px;
+	font-family: Comic Sans MS;
+	font-weight: Bold;
+}
+
+#time{
+	font-size: 20px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	text-Align: right;
+	margin-inline: auto;
+}
+
+
+#CMExBoard{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	padding: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+	margin-inline: auto;
+	width: max-content;
+	max-width: 1320px;
+}

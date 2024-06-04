@@ -1,0 +1,46 @@
+.tiles{
+	
+	margin: 48px auto;
+	width: max-context;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 8px;
+
+	
+}
+
+.tile{
+	height: 100px;
+	background: #b3b3b3;
+	border: 3px soild #eeeeee;
+	cursor: pointer;
+	border-radius: 5px;
+	
+}
+
+.tile:hover {
+	background-color: #dddddd;
+}
+
+#gameboard{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	padding: 10px;
+	margin-top: 150px;
+	width: max-content;
+	margin-inline:auto;
+
+}
+
+#playCMForm{
+	margin-inline: auto;
+	width: max-context;
+	margin: 300px;
+}
+
+h2{
+	text-align:center;
+}
+
+#Backup{
+	margin-inline: auto;
+}

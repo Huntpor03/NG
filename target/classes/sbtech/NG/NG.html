@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+		<title>SBT - Game Login </title>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		
+		
+		<wicket:link>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+		</wicket:link>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	</head>
+	<body>
+			<main>
+					<form class = "LoginForm col-lg-3" wicket:id = "LoginForm" id = "LoginForm">
+						<div class = "container">
+						<H2 class = "Logintitle">SBT Game Login: </H2>
+						<div class = "row">
+							<input type = "text" wicket:id = "LoginUsername" id="LoginUsername" placeholder = "Username / No Username, (Use a Period)"/>
+			
+						</div>
+						
+						<div class = "row">
+							<input type = "password" wicket:id = "LoginPassword" id ="LoginPassword" placeholder = "Password / No Password, (Use a Period)"/>
+						</div>
+						
+						<div class = "row">
+							<input type = "submit" wicket:id = "LoginButton" id = "LoginButton" class = "btn btn-outline-primary" value = "Login"/>
+							<input type = "submit" wicket:id = "RegiButton" id = "regiButton" class = "btn btn-outline-primary" value = "Register"/>
+						</div>
+						</div>
+					</form>
+			</main>
+			
+			
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>

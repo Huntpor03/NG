@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+<title>SBT - Toddler Games</title>
+<wicket:link>
+	<link rel="stylesheet" href="ToddlerGames.css" type="text/css" media="screen" title="Stylesheet" />
+</wicket:link>
+
+</head>
+<body>
+		<Form class = "container col-lg-12" wicket:id = "ToddlerGamesForm" id = "ToddlerGamesForm">
+			<div class = "container">
+ 				<div class = "row">
+					<h2 id = "Todmaintitle"> Available Toddler Games</h2>
+					<div class = "container col-lg-3" id = "ColorMatch">
+						<h2> Color Match </h2>
+						<img src = "color-match" alt = "" width = "250px" height = "100px"/>
+						<p> Color matching is a very fast pass game, so that your Toddler can start to learn their Colors. This allows them to select two boxes to find the matching color. The correct color will stay on the screen. This will show them what colors the have gotten correct so far. </p>
+						<p> Please press Play to start the Game. </p>
+					 	<input type = "submit" wicket:id = "PlayCM" id = "PlayCM" class = "btn btn-outline-primary" value = "Play"/>
+					</div>
+					<div class = "container col-lg-3" id = "NumberMatch">
+						<h2> Number Match </h2>
+						<img src = "number-match.png" alt = "" width = "250px" height = "100px"/>
+						<p> Number Match is pretty much Color Match, but with Number. This Game is another fast pass game that allows your toddler to match the first 6 numbers. Match the correct numbers and they will stay on the screen. </p>
+						<p> Please Click Play to start the Game. </p>
+						<input type = "submit" wicket:id = "PlayNM" id = "PlayNM" class = "btn btn-outline-primary" value = "Play"/>
+					</div>
+					<input type= "submit" wicket:id = "backlevels" id="backlevels" class = "btn btn-outline-primary" value="Back"/>
+				</div>
+			</div>
+		</Form>
+
+</body>
+</html>

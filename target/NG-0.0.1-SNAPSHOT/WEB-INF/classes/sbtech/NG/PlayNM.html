@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+<title>SBT - Number Match </title>
+<wicket:link>
+	<link rel = "stylesheet" href = "PlayNM.css">
+	<script type = "text/javascript" src = "PlayNM.js" defer></script>
+</wicket:link>
+</head>
+<body>
+		<form wicket:id = "PlayNMForm" class = "container col-lg-3" id = "PlayNMForm">
+			<div class = "container" id = "NMgame">
+				<h2> Number Match </h2>
+				<div class = "numbertiles"></div>
+				
+				<div class = "GameButtons">
+					<input type = "submit" wicket:id = "again" id = "playAgain" class = "btn btn-outline-primary" value = "Play Again" />
+					<input type = "submit" wicket:id = "Backpage" id = "back" class = "btn btn-outline-primary" value = "Back"/>
+				</div>
+			</div>
+		</form>
+</body>
+</html>

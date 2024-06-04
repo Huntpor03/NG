@@ -1,0 +1,55 @@
+#ToddlerGamesForm{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	margin-top: 300px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	background-color: #facecd;
+}
+#Todmaintitle{
+	text-align: center;
+}
+#ColorMatch{
+	
+	box-shadow:  0px 2px 5px 0px rgba(0,0,0,.5);
+	padding:10px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#PlayCM{
+	display: block;
+	margin: auto;
+	border-radius: 10px;
+	
+}
+
+#PlayNM{
+	display: block;
+	margin: auto;
+	border-radius: 10px;
+	
+}
+
+#PlayCMlink{
+	text-decoration:none;
+}
+
+#NumberMatch{
+	box-shadow:  0px 2px 5px 0px rgba(0,0,0,.5);
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#AnimalMatch {
+	box-shadow:  0px 2px 5px 0px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+#backlevels{
+	margin-top: 10px;
+}

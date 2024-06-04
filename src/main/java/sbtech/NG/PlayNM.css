@@ -1,0 +1,37 @@
+.numbertiles{
+	
+	margin: 48px auto;
+	width: max-context;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 8px;
+
+
+	
+}
+
+.numbertile{
+	height: 100px;
+	background: #b3b3b3;
+	border: 3px soild #eeeeee;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 56px;
+	text-align:center;
+}
+
+.numbertile:hover {
+	background-color: #dddddd;
+}
+
+#NMgame{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	margin-top: 150px;
+	margin-inline: auto;
+	width: max-content;
+	padding: 10px;
+}
+
+h2{
+	text-align:center;
+}

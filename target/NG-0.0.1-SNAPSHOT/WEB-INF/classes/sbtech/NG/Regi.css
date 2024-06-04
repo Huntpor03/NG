@@ -1,0 +1,48 @@
+#RegiForm{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-inline: auto;
+	margin-top: 250px;
+}
+
+input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+}
+
+h2{
+	text-align:center;
+}
+#first{
+	margin-bottom:10px;
+}
+#last{
+	margin-bottom:10px;
+}
+#user{
+	margin-bottom:10px;
+}
+#pass{
+	margin-bottom:10px;
+}
+#email{
+	margin-bottom:10px;
+}
+
+#regiBut{
+	border-radius: 10px;
+	display: block;
+	margin-top: 10px;
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Game Registration Form</title>
+<wicket:link>
+		<link rel="stylesheet" href="Regi.css" type="text/css" media="screen" title="Stylesheet" />
+</wicket:link>
+</head>
+<body>
+	<form wicket:id = "RegiForm" id = "RegiForm" class = "col-lg-5">
+		<div class = "container">
+		<h2> Register Game User</h2>
+		<div class = "row">
+			<input type = "text" wicket:id = "FirstName" id = "first" placeholder = "First Name" required/>
+			<input type = "text" wicket:id = "LastName" id = "last" placeholder = "Last Name" required/>
+			<input type = "text" wicket:id = "user" id = "user" placeholder = "Username" required/>
+			<input type = "password" wicket:id = "pass" id = "pass" placeholder = "Password" required/>
+			<input type = "email" wicket:id = "email" id = "email" placeholder = "Email Address" required/>
+			<input type = "submit" wicket:id = "regi" id = "regiBut" class = "btn btn-outline-primary col-lg-2" value = "Register User"/>
+		</div>
+		</div>
+	</form>
+</body>
+</html>

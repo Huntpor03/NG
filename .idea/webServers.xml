@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="33762224-8325-4843-bba4-6c27606bfaa7" name="sbtechnologies" url="http://sbtechnologies.net:80/game">
+        <fileTransfer rootFolder="/var/lib/tomcat10/webapps" accessType="SFTP" host="huntpor@dkwar.com" port="22" sshConfigId="62d7bbf1-10df-4333-b5de-69a932173af8" sshConfig="huntpor@huntpor@dkwar.com:22 password">
+          <advancedOptions>
+            <advancedOptions keepAliveTimeout="0" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

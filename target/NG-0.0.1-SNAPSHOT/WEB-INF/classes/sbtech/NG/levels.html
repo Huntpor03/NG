@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+<title>SBT - Level Selection</title>
+
+<wicket:link>
+	<link rel="stylesheet" href="levels.css" type="text/css" media="screen" title="Stylesheet" />
+</wicket:link>
+</head>
+<body>
+		<form wicket:id = "levelForm" id = "levelForm" class = "col-lg-2">
+			<div class = "container">
+				<h2> Level Selection </h2>
+				<input type = "submit" class = "btn btn-outline-danger" wicket:id = "toddler" id = "todderButton" value = "Toddler"/>
+				<input type = "submit" class = "btn btn-outline-danger" wicket:id = "elelevelbutton" id = "eleButton" value = "Extreme"/>
+				<input type = "submit" wicket:id = "logoutGame" id = "logoutGame" value = "Logout" class = "btn btn-outline-primary"/>
+			</div>	
+		</form>
+</body>
+</html>

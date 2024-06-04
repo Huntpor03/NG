@@ -1,0 +1,41 @@
+#levelForm{
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	margin-top: 250px;
+	max-width: 300px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	margin-inline: auto;
+}
+
+h2{
+	text-align: center;
+}
+
+#todderButton{
+	margin-top: 10px;
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+	display: block;
+	border-radius: 10px;
+	margin-inline: auto;
+	margin-bottom: 10px;
+}
+
+#eleButton{
+	margin-top: 10px;
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+	display: block;
+	border-radius: 10px;
+	margin-inline: auto;
+}
+
+#logoutGame{
+	border-radius:10px;
+	box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+	display: block;
+	margin-inline: auto;
+	margin-top: 10px;
+}
