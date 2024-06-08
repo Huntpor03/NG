@@ -2,14 +2,13 @@ const tilesContainer = document.querySelector('.tiles');
 const colors = ["red","orange","yellow","green","blue","purple"];
 const colorpicker = [...colors, ...colors];
 const tileCount = colorpicker.length;
-const time = timer();
-
-const highscore = JSON.parse(localStorage.getItem("time"));
+const time =  timer();
 
 //Game State
 let revealedCount = 0;
 let activeTile = null;
 let awaitingEndofMove = false;
+
 
 
 function buildTile(color){
@@ -73,20 +72,29 @@ for (let i = 0; i < tileCount; i++){
 	tilesContainer.appendChild(tile);
 }
 
+
 function timer() {
-	var sec = 0;
-	var highscore = document.getElementById('highscore').innerHTML = "High Score:"
+	let sec = 0;
+	const highscore = document.getElementById('highscore').innerHTML = "High Score:" + sec;
 	var timer = setInterval(function () {
 		document.getElementById('time').innerHTML= "Time:" + sec;
 		sec++
 		if (revealedCount === tileCount) {
 			clearInterval(timer);
 			sec -=1;
-			highscore = document.getElementById('highscore').innerHTML = "High Score:" + sec;
+			highscore = document.getElementById('highscore').innerHTML= "" + sec;
 			clearTimeout(timer);
 		}
 
 	}, 1000);
 	
+	const scored = highscore;
 }
 
+const score = document.getElementById('playAgain');
+
+score.addEventListener("click",() =>{
+
+	location.reload();
+
+})

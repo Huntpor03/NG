@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0 ">
+<title>STB - Puzzle Game</title>
+<wicket:link>
+	<script type = "text/javascript" src = "PuzEx.js" defer></script>
+</wicket:link>
+<wicket:link>
+	<link rel = "stylesheet" href = "PuzEx.css">
+</wicket:link>
+
+</head>
+<body>
+	<form wicket:id = "PuzzForm" id = "PuzzForm" class = "container col-lg-12">
+		<h2>Puzzle Game</h2>
+		<div id = "puzzleBoard"> </div>
+		<h2 id = "Tturns"> Turns: <span id = "turns">0</span></h2>
+	</form>
+</body>
+</html>

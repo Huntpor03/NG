@@ -2,6 +2,9 @@ package sbtech.NG;
 
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
+import org.apache.wicket.markup.html.IPackageResourceGuard;
+import org.apache.wicket.markup.html.PackageResourceGuard;
+import org.apache.wicket.markup.html.SecurePackageResourceGuard;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
@@ -31,6 +34,9 @@ public class WicketApplication extends WebApplication
 		super.init();
 		de.agilecoders.wicket.core.Bootstrap.install(this);
 		MountPages();
+		
+	
+
 	}
 	
 	
@@ -41,6 +47,8 @@ public class WicketApplication extends WebApplication
 		mountPage("/levels/toddlergames", ToddlerGames.class);
 		mountPage("levels/Extremegames", Extreme.class);
 		mountPage("/ExtremeGames/CMEx", CMEx.class);
+		mountPage("ExtremeGames/SnakeEx", SnakeEx.class);
+		mountPage("/ExtremeGames/PuzEx", PuzEx.class);
 		mountPage("/toddlergames/PlayCM", PlayCM.class);
 		mountPage("/toddlergames/PlayNM", PlayNM.class);
 		

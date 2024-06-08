@@ -45,10 +45,6 @@ function buildTile(color){
 			awaitingEndofMove = false;
 			revealedCount += 2;
 			
-			if(revealedCount === tileCount){
-				alert("Yay! You did it!");
-			}
-
 			return;
 		}
 		awaitingEndofMove = true;
@@ -84,11 +80,15 @@ function timer() {
 		document.getElementById('time').innerHTML= "Time:" + sec;
 		sec++
 		if (revealedCount === tileCount) {
-			clearInterval(timer);
-			alert ("WOW! I'm impressed you got that :) Your time to beet:" + sec); 
-
+			alert ("WOW! I'm impressed you got that :) Your time to beat:" + sec); 
+			clearTimeout(timer);
+			sec = highscore;
 		}
+	
+	var highscore =	document.getElementById('highscore').innerHTML = "HighScore" + highscore;
 	}, 1000);
 }
+
+
 
 

@@ -14,10 +14,23 @@ public class Extreme extends WebPage {
 			public void onSubmit() {
 				setResponsePage(CMEx.class);
 			}
-		}; 
+		};
+		
+		Button snakeButton = new Button("SnakeEx") {
+			public void onSubmit() {
+				setResponsePage(SnakeEx.class);
+			}
+		};
+		
+		Button puzButton = new Button("puzzleEx") {
+			public void onSubmit() {
+				setResponsePage(PuzEx.class);
+			}
+		};
 		
 		add(extremeForm);
 		extremeForm.add(cMextremeButton);
-		
+		extremeForm.add(snakeButton);
+		extremeForm.add(puzButton);
 	}
 }
