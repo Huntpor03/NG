@@ -60,9 +60,9 @@ function dragDrop(){
 		}
 	
 function dragEnd() {
-	/*	
-		let currCoords = currTile.id.split("-");
 		
+		let currCoords = currTile.id.split("-");
+	/*	
 		let r = parseInt(currCoords[0]);
 		let c = parseInt(currCoords[1]);
 		
@@ -91,6 +91,7 @@ function dragEnd() {
 
 			turns += 1;
 			document.getElementById("turns").innerText = turns;
+			
 		}
 					
 function shuffle(array){
