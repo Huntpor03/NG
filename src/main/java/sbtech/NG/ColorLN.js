@@ -13,6 +13,7 @@ function BuildTile(color){
 	newTile.setAttribute("data-color", color);
 	newTile.setAttribute('id', color);
 	
+	newTile.style.background = color;
 	
 	newTile.addEventListener("click", () => {
 		
