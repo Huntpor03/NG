@@ -40,10 +40,12 @@ public class H2data extends WebPage {
 	}
 	
 	public static String url() {
+		
 		if(getOsName().startsWith("Windows")) {
 			h2URL = "jdbc:h2:C:/Users/Hunter/eclipse-workspace/GamePage/src/main/resources/data/SBTECH";
-		}else if(getOsName().startsWith("MacOs")) {
-			h2URL = "jdbc:h2:file:/Users/Huntpor/eclipse-workspace/NG-main/src/main/resources/data/SBTECH";
+			
+		}else if(getOsName().startsWith("Mac")) {
+			h2URL = "jdbc:h2:/Users/huntpor/Documents/GitHub/NG/src/main/resources/data/SBTECH";
 		}else {
 			h2URL = "jdbc:h2:file:/var/lib/tomcat10/webapps/src/main/resources/data/SBTECH";
 		}

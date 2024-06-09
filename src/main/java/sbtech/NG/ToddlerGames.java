@@ -9,6 +9,24 @@ public class ToddlerGames extends WebPage {
 	public ToddlerGames() {
 		Form<?> toddlerGamesForm = new Form<Object>("ToddlerGamesForm");
 		
+		Button learnColors = new Button("ColorLN") {
+			public void onSubmit() {
+				setResponsePage(ColorLN.class);
+			}
+		};
+		
+		Button learnNumbers = new Button("NumberLN"){
+			public void onSubmit() {
+				setResponsePage(NumberLN.class);
+			}
+		};
+		
+		Button learnAlphabet = new Button("AlphaLN") {
+			public void onSubmit() {
+				setResponsePage(AlphaLN.class);
+			}
+		};
+		
 		Button playCMButton = new Button("PlayCM") {
 			public void onSubmit() {
 				setResponsePage(PlayCM.class);
@@ -28,6 +46,9 @@ public class ToddlerGames extends WebPage {
 		};
 		
 		add(toddlerGamesForm);
+		toddlerGamesForm.add(learnColors);
+		toddlerGamesForm.add(learnNumbers);
+		toddlerGamesForm.add(learnAlphabet);
 		toddlerGamesForm.add(backlevelsButton);
 		toddlerGamesForm.add(playCMButton);
 		toddlerGamesForm.add(playNMButton);

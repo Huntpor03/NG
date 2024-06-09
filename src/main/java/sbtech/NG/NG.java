@@ -33,7 +33,6 @@ public class NG extends H2data {
 	
 	
 	public NG() {
-	
 		
 		Button regiButton = new Button("RegiButton") {
 			public void onSubmit() {
