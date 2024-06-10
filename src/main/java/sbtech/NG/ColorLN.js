@@ -37,3 +37,39 @@ for (let i = 0; i < tileCount; i++){
 	colorpick.splice(randomIndex, 1);
 	tileContainer.appendChild(tile);
 }
+
+const itemContainer = document.querySelector(".fitems");
+
+const reditems = ["apple","heart","crayon","strawberry","rasbarry"];
+const orangeitems = ["carrot","pumpkin","orange","basketball","fire"];
+const yellowitems = ["bananna","sunflower","sponge","corn","duck"];
+const greenitems = ["frog","clover","grass","pear","trees"];
+const blueitems = ["blueberry","whale","jeans","balloon","car"];
+const purpleitems = ["grapes","paint","jellyfish","crystal","shoes"];
+
+const itempicker = [...reditems,...blueitems,...orangeitems,...yellowitems,...greenitems,...purpleitems];
+const itemCount = itempicker.length;
+
+
+function BuildItem(){
+	
+	const newItem = document.createElement("img");
+	
+	newItem.classList.add("item");
+	
+	newItem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + itempicker.shift() + ".png";
+	
+	return newItem;
+}
+
+
+
+for (let j = 0; j < itemCount; j++){
+	
+	const randomitems = Math.floor(Math.random() * itempicker.length);
+	const colored = itempicker[randomitems];
+	const itemTile = BuildItem(colored);
+	
+	itempicker.splice(randomitems, 1);
+	itemContainer.appendChild(itemTile);
+}
