@@ -40,7 +40,8 @@ for (let i = 0; i < tileCount; i++){
 
 const itemContainer = document.querySelector(".fitems");
 
-const reditems = ["apple","heart","crayon","strawberry","rasbarry"];
+const reditems = ["apple","emptyheart","crayon","emptystrawberry","rasbarry"];
+const reditemsfilled = ["heart","strawberry"];
 const orangeitems = ["carrot","pumpkin","orange","basketball","fire"];
 const yellowitems = ["bananna","sunflower","sponge","corn","duck"];
 const greenitems = ["frog","clover","grass","pear","trees"];
@@ -50,6 +51,7 @@ const purpleitems = ["grapes","paint","jellyfish","crystal","shoes"];
 const itempicker = [...reditems,...blueitems,...orangeitems,...yellowitems,...greenitems,...purpleitems];
 const itemCount = itempicker.length;
 
+const filleditem = [...reditemsfilled];
 
 function BuildItem(){
 	
@@ -57,7 +59,13 @@ function BuildItem(){
 	
 	newItem.classList.add("item");
 	
-	newItem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + itempicker.shift() + ".png";
+	newItem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + itempicker.shift() + ".jpg";
+	
+	newItem.addEventListener("click", () => {
+		
+			newItem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + filleditem.shift() + ".jpg";
+	
+	});
 	
 	return newItem;
 }

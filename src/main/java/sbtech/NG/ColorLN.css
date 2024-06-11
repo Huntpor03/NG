@@ -25,6 +25,7 @@
 	padding: 10px;
 	border-radius: 10px;
 	display: grid;
+	background-color: #dddddd;
 	grid-template-columns: repeat(5, 100px);
 	gap: 8px;
 }
