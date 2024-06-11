@@ -22,7 +22,39 @@ function BuildTile(color){
 		let audio = new Audio( "../wicket/resource/sbtech.NG.ColorLN/audioRec/" + color + ".m4a");
 		audio.play();
 		clicked.innerText = color;
+		
+		
+		if(clicked.innerText = color){
+			function reditem(){
 	
+				const reditem = document.createElement("img");
+	
+					reditem.classList.add("item");
+	
+					reditem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + redpicker.shift() + ".jpg";
+	
+					reditem.addEventListener("click", () => {
+		
+						reditem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + filleditem.shift() + ".jpg";
+	
+				});
+	
+					return reditem;
+			}
+
+
+
+			for (let r = 0; r < redcount; r++){
+	
+				//const randomitems = Math.floor(Math.random() * redpicker.length);
+				const colored = redpicker[reditems.length];
+				const itemTile = reditem(colored);
+				
+				//redpicker.splice(randomitems, 1);
+				itemContainer.appendChild(itemTile);
+			}
+		
+		}
 	});
 	
 	return newTile;
@@ -51,9 +83,13 @@ const purpleitems = ["grapes","paint","jellyfish","crystal","shoes"];
 const itempicker = [...reditems,...blueitems,...orangeitems,...yellowitems,...greenitems,...purpleitems];
 const itemCount = itempicker.length;
 
+const redpicker = [...reditems];
+
+const redcount = redpicker.length;
+
 const filleditem = [...reditemsfilled];
 
-function BuildItem(){
+/*function BuildItem(){
 	
 	const newItem = document.createElement("img");
 	
@@ -70,14 +106,46 @@ function BuildItem(){
 	return newItem;
 }
 
+*/
+/*
+function reditem(){
+	
+	const reditem = document.createElement("img");
+	
+	reditem.classList.add("item");
+	
+	reditem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + redpicker.shift() + ".jpg";
+	
+	reditem.addEventListener("click", () => {
+		
+			reditem.src = "../wicket/resource/sbtech.NG.ColorLN/colorimg/" + filleditem.shift() + ".jpg";
+	
+	});
+	
+	return reditem;
+}
 
 
+
+for (let r = 0; r < redcount; r++){
+	
+	//const randomitems = Math.floor(Math.random() * redpicker.length);
+	const colored = redpicker[reditems.length];
+	const itemTile = reditem(colored);
+	
+	//redpicker.splice(randomitems, 1);
+	itemContainer.appendChild(itemTile);
+}
+
+
+/*
 for (let j = 0; j < itemCount; j++){
 	
 	const randomitems = Math.floor(Math.random() * itempicker.length);
 	const colored = itempicker[randomitems];
-	const itemTile = BuildItem(colored);
+	const itemTile = BildItem(colored);
 	
 	itempicker.splice(randomitems, 1);
 	itemContainer.appendChild(itemTile);
 }
+*/
