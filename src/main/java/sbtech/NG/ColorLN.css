@@ -45,6 +45,7 @@
 	margin-top: 150px;
 	width: max-content;
 	margin-inline:auto;
+	border-radius: 10px;
 	
 }
 
@@ -54,6 +55,7 @@
 	margin-top: 150px;
 	width: max-content;
 	margin-inline:auto;
+	border-radius: 10px;
 }
 
 #colors{
