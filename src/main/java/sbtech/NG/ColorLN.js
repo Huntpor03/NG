@@ -140,7 +140,7 @@ function BuildTile(color){
 		 	}
 		 	
 		 	for(let o = 0; o < orangecount; o++){
-				const orangecolored = orangepicker[orangeitems.length];
+					const orangecolored = orangepicker[orangeitems.length];
 				const itemTile = orangeitem(orangecolored);
 				
 				itemContainer.appendChild(itemTile);
