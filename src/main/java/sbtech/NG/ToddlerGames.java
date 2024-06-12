@@ -21,6 +21,12 @@ public class ToddlerGames extends WebPage {
 			}
 		};
 		
+		Button learnShapes = new Button("ShapeLN") {
+			public void onSubmit() {
+				setResponsePage(ShapeLN.class);
+			}
+		};
+		
 		Button learnAlphabet = new Button("AlphaLN") {
 			public void onSubmit() {
 				setResponsePage(AlphaLN.class);
@@ -48,6 +54,7 @@ public class ToddlerGames extends WebPage {
 		add(toddlerGamesForm);
 		toddlerGamesForm.add(learnColors);
 		toddlerGamesForm.add(learnNumbers);
+		toddlerGamesForm.add(learnShapes);
 		toddlerGamesForm.add(learnAlphabet);
 		toddlerGamesForm.add(backlevelsButton);
 		toddlerGamesForm.add(playCMButton);

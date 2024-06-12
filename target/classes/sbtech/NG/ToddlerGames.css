@@ -28,7 +28,11 @@
 	align-items: left;
 }
 #NumLN{
-	margin: 10px auto;
+	margin: auto;
+	border-radius: 10px;
+}
+#ShapeLN{
+	margin: auto;
 	border-radius: 10px;
 }
 #AlphaLN{
