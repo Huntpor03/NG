@@ -10,7 +10,7 @@ const colors = ["Red","Orange","Yellow","Green","Blue","Purple","White","Black",
 //EMPTY IMAGES
 const reditems = ["emptyapple","emptyheart","emptycrayon","emptystrawberry","emptyraspberry"];
 const orangeitems = ["emptycarrot","emptypumpkin","emptyorange","emptybasketball","emptyfire"];
-const yellowitems = ["emptybanana","sunflower","sponge","corn","duck"];
+const yellowitems = ["emptybanana","emptysun","emptylemon","corn","duck"];
 const greenitems = ["frog","clover","grass","pear","trees"];
 const blueitems = ["blueberry","whale","jeans","balloon","car"];
 const purpleitems = ["grapes","paint","jellyfish","crystal","shoes"];
@@ -22,7 +22,7 @@ const blackitems = [""];
 //FILLED IMAGES
 const reditemsfilled = ["apple","heart","crayon","strawberry","raspberry"];
 const orangeitemsfilled = ["carrot","pumpkin","orange","basketball","fire"];
-const yellowitemsfilled = ["banana"];
+const yellowitemsfilled = ["banana","sun","lemon"];
 const greenitemsfilled = [""];
 const blueitemsfilled = [""];
 const purpleitemsfilled = [""];
@@ -83,6 +83,7 @@ function BuildTile(color){
 	newTile.setAttribute('id', color);
 	
 	newTile.style.background = color;
+
 	
 	newTile.addEventListener("click", () => {
 		
@@ -116,8 +117,8 @@ function BuildTile(color){
 			for (let r = 0; r < redcount; r++){
 	
 				const colored = redpicker[reditems.length];
-				const itemTile = reditem(colored);
-				itemContainer.appendChild(itemTile);
+				const RedTile = reditem(colored);
+				itemContainer.appendChild(RedTile);
 			}
 		
 		 }
@@ -140,10 +141,10 @@ function BuildTile(color){
 		 	}
 		 	
 		 	for(let o = 0; o < orangecount; o++){
-					const orangecolored = orangepicker[orangeitems.length];
-				const itemTile = orangeitem(orangecolored);
+				const orangecolored = orangepicker[orangeitems.length];
+				const OrangeTile = orangeitem(orangecolored);
 				
-				itemContainer.appendChild(itemTile);
+				itemContainer.appendChild(OrangeTile);
 				
 			}
 		 	

@@ -5,7 +5,9 @@
 	display: grid;
 	grid-template-columns: repeat(4, 100px);
 	gap: 8px;
-
+	background-color: #dddddd;
+	padding: 10px;
+	border-radius: 10px;
 	
 }
 
@@ -25,10 +27,10 @@
 #gameboard{
 	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
 	padding: 10px;
-	margin-top: 150px;
+	margin-top: 100px;
 	width: max-content;
 	margin-inline:auto;
-
+	border-radius: 10px;
 }
 
 #playCMForm{
