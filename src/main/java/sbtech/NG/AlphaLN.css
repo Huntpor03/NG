@@ -62,12 +62,15 @@
 }
 
 .choiceletter .fill{
-	display: grid;
-	grid-template-columns: repeat(5, 100px);
+	display: inline-block;
 }
 .acontainer {
 	display: inline-block;
+	height : 100px;
+	width: 100px;
 }
 .bcontainer {
 	display: inline-block;
+	height : 100px;
+	width: 100px;
 }
