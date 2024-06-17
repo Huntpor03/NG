@@ -20,48 +20,6 @@ const img = document.createElement('img');
 
 let draggedItem = null;
 
-//Container.addEventListener('dragstart', dragStart);
-//aContainer.addEventListener('dragend', dragEnda);
-//bContainer.addEventListener('dragstart', dragStart);
-//bContainer.addEventListener('dragend', dragEndb);
-
-/*
-for(const empty of empties){
-	empty.addEventListener('dragover', function dragOver(e) {
-			console.log('dragover');
-			e.preventDefault();
-		});
-	empty.addEventListener('dragenter', function dragEnter(e) {
-			console.log('dragenter');
-			e.preventDefault();
-			this.className += ' hovered';
-		});
-	empty.addEventListener('dragleave', function dragLeave() {
-			console.log('dragleave');
-			this.className = 'empty';
-		});
-		empty.addEventListener('drop', function dragDrop() {
-			console.log('drop');
-			this.append(img, img.src = "../wicket/resource/sbtech.NG.AlphaLN/alphaimg/" + img + ".jpg", img.classList.add('fill'), img.setAttribute("draggable", true));
-			
-		});
-}
-/*
-for (let i = 0; i < choiceContainer.length; i++){
-		
-		const item = choiceContainer[i];
-		
-		item.addEventListener('dragstart', function dragEnter() {
-						draggedItem = item;
-						item.className += ' hold';
-						setTimeout(()=> item.className = "invisable",0);
-				});
-		item.addEventListener('dragend', function dragEnd() {
-						item.className  = "fill";
-				});
-}
-
-*/
 aimg.forEach(function createImage(image){
 				const img = document.createElement('img');
 				
@@ -275,107 +233,107 @@ function Buildalphabet(letter){
 		
 		if(Buildalphabet.id == "Aa"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "AUNT";
+			letterTitle.innerText = "APE";
 		}
 		if(Buildalphabet.id == "Bb"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "BELT";
+			letterTitle.innerText = "BAT";
 		}
 		if(Buildalphabet.id == "Cc"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "CANT";
+			letterTitle.innerText = "CAT";
 		}
 		if(Buildalphabet.id == "Dd"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "DOGS";
+			letterTitle.innerText = "DOG";
 		}
 		if(Buildalphabet.id == "Ee"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "EGGS";
+			letterTitle.innerText = "EAT";
 		}
 		if(Buildalphabet.id == "Ff") {
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "FOXY";
+			letterTitle.innerText = "FAT";
 		}
 		if(Buildalphabet.id == "Gg"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "GAME";
+			letterTitle.innerText = "GOD";
 		}
 		if(Buildalphabet.id == "Hh"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "HOLD";
+			letterTitle.innerText = "HIT";
 		}
 		if(Buildalphabet.id == "Ii"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "ICEY";
+			letterTitle.innerText = "INN";
 		}
 		if(Buildalphabet.id == "Jj"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "JOLT";
+			letterTitle.innerText = "JET";
 		}
 		if(Buildalphabet.id == "Kk"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "KITE";
+			letterTitle.innerText = "KIT";
 		}
 		if(Buildalphabet.id == "Ll"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "LILY";
+			letterTitle.innerText = "LOT";
 		}
 		if(Buildalphabet.id == "Mm"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "MAMA";
+			letterTitle.innerText = "MAN";
 		}
 		if(Buildalphabet.id == "Nn"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "NOPE";
+			letterTitle.innerText = "NUT";
 		}
 		if(Buildalphabet.id == "Oo"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "OPEN";
+			letterTitle.innerText = "OUT";
 		}
 		if(Buildalphabet.id == "Pp"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "PINK";
+			letterTitle.innerText = "PEN";
 		}
 		if(Buildalphabet.id == "Qq"){
-			spell.innerText = "Spell: "
-			letterTitle.innerText = "QUIT";
+			spell.innerText = "Find: "
+			letterTitle.innerText = "Q";
 		}
 		if(Buildalphabet.id == "Rr"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "RACE";
+			letterTitle.innerText = "RET";
 		}
 		if(Buildalphabet.id == "Ss"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "SNAP";
+			letterTitle.innerText = "SUS";
 		}
 		if(Buildalphabet.id == "Tt"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "TILE";
+			letterTitle.innerText = "TIE";
 		}
 		if(Buildalphabet.id == "Uu"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "UPON";
+			letterTitle.innerText = "UP";
 		}
 		if(Buildalphabet.id == "Vv") {
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "VILE";
+			letterTitle.innerText = "VIB";
 		}
 		if(Buildalphabet.id == "Ww"){
-			spell.innerText = "Spell: "
-			letterTitle.innerText = "WITH";
+			spell.innerText = "Sell: "
+			letterTitle.innerText = "WIG";
 		}
 		if(Buildalphabet.id == "Xx"){
-			spell.innerText = "Spell: "
-			letterTitle.innerText = "XRAY";
+			spell.innerText = "Find: "
+			letterTitle.innerText = "X";
 		}
 		if(Buildalphabet.id == "Yy"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "YOYO"
+			letterTitle.innerText = "YUT"
 		}
 		if(Buildalphabet.id == "Zz"){
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "ZOOM"
+			letterTitle.innerText = "ZIG"
 		}
 	});
 
@@ -393,18 +351,4 @@ for (a = 0; a < alphabetCount; a++){
 				
 }
 
-/*
-
-function dragEnda() {
-		this.className  = "aletter";
-		
-}
-
-
-//function dragEndb(){
-//	this.className = "bletter";
-//}
-
-
-*/
 

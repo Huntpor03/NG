@@ -5,7 +5,7 @@
 	border-radius: 10px;
 	background-color: #dddddd;
 	display: grid;
-	grid-template-columns: repeat(13, 100px);
+	grid-template-columns: repeat(9, 100px);
 	gap: 8px;
 }
 
@@ -18,6 +18,14 @@
 	font-size: 48px;
 }
 
+#alphaspot{
+	box-shadow: 9px 9px 9px 9px rgba(0,0,0,.5);
+	margin-top: 150px;
+	width: max-content;
+	margin-inline: auto;
+	border-radius: 10px;
+	padding: 10px;
+}
 #infospot {
 	box-shadow: 9px 9px 9px 9px rgba(0,0,0,.5);
 	margin-top: 150px;
@@ -28,15 +36,34 @@
 }
 
 #lettered {
-	font-size: 56px;
+	font-size: 30px;
+	color: #ffb2b2;
+	font-weight: bolder;
+	font-family: Comic Sans MS;
+}
+
+#title{
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: Comic Sans MS;
+	text-align: center;
+}
+
+#spell {
+	
+	font-size: 36px;
+	font-family: Comic Sans MS;
 }
 
 .fill{
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5);
 	height: 100px;
 	width: 100px;
 	cursor: pointer;
-	border-radius: 10px;
 	padding: 5px;
+	margin: 5px;
+	background-color: #cccccc;
+	
 
 }
 #empty {
