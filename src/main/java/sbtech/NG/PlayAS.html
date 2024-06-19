@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Alphabet Spell</title>
+</head>
+<wicket:link>
+		<link rel = "stylesheet" href = "PlayAS.css">
+		<script type = "text/javascript" src = "PlayAS.js" defer></script>
+</wicket:link>
+<body>
+	<form wicket:id = "AlphaSpell" class = "col-lg-5" id = "AlphaSpell">
+		<div class = "container">
+			<div class = "word"></div>
+			<input type = "text" placeholder = "Type the Word" wicket:id = "Spell" id = "spell" class = "spell"/>
+		<div class = "row">
+			<input type = "button" class = "generate-word btn btn-outline-primary" id = "generate" wicket:id = "generate" value = "Generate Word"/>
+			<input type = "button" class = "check-word btn btn-outline-primary" id = "checkword" wicket:id = "Check" value = "Check Word"/>
+		</div>
+			<div class = "score-area"><span>Score: </span><span class = "score">0</span></div>
+		</div>
+	</form>
+</body>
+</html>

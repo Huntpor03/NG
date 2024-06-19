@@ -60,6 +60,7 @@ public class WicketApplication extends WebApplication
 		mountPage("/toddlergames/AlphabetLN", AlphaLN.class);
 		mountPage("/toddlergames/PlayCM", PlayCM.class);
 		mountPage("/toddlergames/PlayNM", PlayNM.class);
+		mountPage("/toddlergames/PlayAS", PlayAS.class);
 		
 		mountPage("levels/Extremegames", Extreme.class);
 		mountPage("/ExtremeGames/CMEx", CMEx.class);

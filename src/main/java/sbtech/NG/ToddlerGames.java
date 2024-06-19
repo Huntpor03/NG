@@ -39,6 +39,12 @@ public class ToddlerGames extends WebPage {
 			}
 		};
 		
+		Button playASButton = new Button("PlayAS") {
+			public void onSubmit() {
+				setResponsePage(PlayAS.class);
+			}
+		};
+		
 		Button playNMButton = new Button("PlayNM") {
 			public void onSubmit() {
 				setResponsePage(PlayNM.class);
@@ -58,6 +64,7 @@ public class ToddlerGames extends WebPage {
 		toddlerGamesForm.add(learnAlphabet);
 		toddlerGamesForm.add(backlevelsButton);
 		toddlerGamesForm.add(playCMButton);
+		toddlerGamesForm.add(playASButton);
 		toddlerGamesForm.add(playNMButton);
 	}
 }

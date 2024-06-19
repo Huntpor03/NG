@@ -1,0 +1,38 @@
+#AlphaSpell {
+	
+	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
+	padding: 10px;
+	margin-top: 100px;
+	margin-inline:auto;
+	width: max-content;
+	border-radius: 10px;
+}
+
+#spell{
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: max-content;
+	background-color: #eff7fa;
+}
+
+#generate{
+	margin: 5px;
+}
+
+#checkword{
+	margin: 5px;
+}
+
+.word{
+	letter-spacing: .5rem;
+	font-size: 24px;
+	color: #0d6efd;
+	text-align: center;
+}
+
+.score-area{
+	font-size: 20px;
+	color: #ddd;
+}

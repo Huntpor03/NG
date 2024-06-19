@@ -343,7 +343,7 @@ function Buildalphabet(letter){
 			let Saudio = new Audio("../wicket/resource/sbtech.NG.AlphaLN/audioRec/S.m4a");
 			Saudio.play();
 			spell.innerText = "Spell: "
-			letterTitle.innerText = "SUS";
+			letterTitle.innerText = "SIN";
 		}
 		if(Buildalphabet.id == "Tt"){
 			let Taudio = new Audio("../wicket/resource/sbtech.NG.AlphaLN/audioRec/T.m4a");
