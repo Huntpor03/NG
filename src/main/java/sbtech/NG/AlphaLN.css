@@ -60,9 +60,10 @@
 	height: 100px;
 	width: 100px;
 	cursor: pointer;
-	padding: 5px;
+	padding: 10px;
 	margin: 5px;
 	background-color: #cccccc;
+	border-radius: 10px;
 	
 
 }
@@ -105,14 +106,4 @@
 
 .choiceletter .fill{
 	display: inline-block;
-}
-.acontainer {
-	display: inline-block;
-	height : 100px;
-	width: 100px;
-}
-.bcontainer {
-	display: inline-block;
-	height : 100px;
-	width: 100px;
 }

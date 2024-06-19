@@ -1,13 +1,12 @@
 #ToddlerGamesForm{
 	box-shadow:  9px 9px 9px 9px rgba(0,0,0,.5);
-	margin-top: 300px;
+	margin-top: 100px;
 	border-radius: 10px;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 20px;
 	text-decoration: none;
-	background-color: #facecd;
 }
 #Todmaintitle{
 	text-align: center;
@@ -28,7 +27,11 @@
 	align-items: left;
 }
 #NumLN{
-	margin: 10px auto;
+	margin: auto;
+	border-radius: 10px;
+}
+#ShapeLN{
+	margin: auto;
 	border-radius: 10px;
 }
 #AlphaLN{
