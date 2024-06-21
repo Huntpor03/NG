@@ -22,9 +22,16 @@ public class PlayAS extends WebPage {
 			
 		};
 		
+		Button asBackButton = new Button("asback") {
+			public void onSubmit() {
+				setResponsePage(ToddlerGames.class);
+			}
+		};
+		
 		add(PlayAS);
 		PlayAS.add(Spell);
 		PlayAS.add(Generate);
 		PlayAS.add(CheckButton);
+		PlayAS.add(asBackButton);
 	}
 }

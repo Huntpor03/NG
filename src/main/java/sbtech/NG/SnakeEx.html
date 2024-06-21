@@ -12,13 +12,10 @@
 </wicket:link>
 </head>
 <body>
-	<div class = "wrapper col-lg-3">
-		<div class = "game-details">
-			<span class = "Score"> Score: 10</span>
-			<span class = "high-score"> High Score: 100</span>
-		</div>
-		<div class ="play-board" id = "play-board">
-		</div>
+	<div class = "gameContainer">
+		<canvas id = "gameBoard" width = "500" height = "500"></canvas>
+		<div id = "score">0</div>
+		<button id = "resetBtn"> Reset </button>
 	</div>
 </body>
 </html>
